@@ -6,11 +6,13 @@ using AO.LPR.Reports;
 
 public class PdfReportGenerator : IReportGenerator
 {
+
+    string basePath =
+           @"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\templates\{0}.html";
+
     public string GenerateHtml(ReportForm reportContent)
     {
-        var basePath =
-            @"C:\Users\neelanshu\Desktop\LPR\Flattened-Lt\AO.LPR.Reports\report\pdf\templates\{0}.html";
-
+       
         StringBuilder reportHtml = new StringBuilder(File.ReadAllText(string.Format(basePath, PdfTemplates.report)));
 
         /*START - Header update and replace in report html */
@@ -68,8 +70,6 @@ public class PdfReportGenerator : IReportGenerator
 
 public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question, string templateName)
     {
-        var basePath =
-           @"C:\Users\neelanshu\Desktop\LPR\Flattened-Lt\AO.LPR.Reports\report\pdf\templates\{0}.html";
 
         StringBuilder questionsHtml =
                  new StringBuilder(
@@ -97,9 +97,7 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
     public string GetQuestionHtmlForGridType(GridTable grid)
     {
-        var basePath =
-        @"C:\Users\neelanshu\Desktop\LPR\Flattened-Lt\AO.LPR.Reports\report\pdf\templates\{0}.html";
-
+        
         StringBuilder gridTableHtml =
                  new StringBuilder(
                      File.ReadAllText(string.Format(basePath,PdfTemplates.grid_table)));

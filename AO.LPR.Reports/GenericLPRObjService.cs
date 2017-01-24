@@ -15,7 +15,7 @@ public class GenericLPRObjService
     {
         var json =
             File.ReadAllText(
-                @"C:\Users\neelanshu\Desktop\LPR\Flattened-Lt\AO.LPR.Reports\full_json.json");
+                @"C:\git\pdf-csv-generator\AO.LPR.Reports\full_json.json");
 
         var reportForm = new ReportForm() { AllSections = new List<SectionWithQuestions>() };
         var formObj = JsonConvert.DeserializeObject<RootObject>(json);
