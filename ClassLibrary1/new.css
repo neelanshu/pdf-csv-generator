@@ -1,0 +1,39 @@
+.main_div{background-color:#F8F8F8; vertical-align:center; z-index:1000000; border-width:1px; border-style:solid ;border-radius: 2px;border-color: #E0E0E0; width:400px; height:200px}
+.text_one{color: #003300;}
+.text_two{color: #0000ca;}
+.text_three{color: #e40000;}
+.tbl_page{
+	margin-top: 5px;
+    color: black;
+    background-color: cornsilk;
+    display: block;
+    border-style: solid;
+    border-color: wheat;
+    border-width: 1px;;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    white-space: normal;
+    line-height: normal;
+}
+
+.tbl_cell{
+    background-color: honeydew;
+}
+
+td, th {
+    display: table-cell;
+}
+
+.tbr_raw{
+    background-color: #66CCFF;
+    text-align: center;
+}
+
+.image_div_background{
+    background-image: url('violin-clip-art-violin-clip-art-1.jpg');
+    height: 400px; width: 400px;
+    background-repeat: no-repeat;
+}
+
+ 

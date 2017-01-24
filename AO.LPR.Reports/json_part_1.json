@@ -1,0 +1,177 @@
+{
+  "id": 1,
+  "templateId": 1,
+  "name": "TestForm1",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Overview",
+      "displayOrder": 1,
+      "questionContainers": [
+        {
+          "id": 3,
+          "number": "1.1",
+          "containerText": "Initial lenders in the syndicate:",
+          "questions": [
+            {
+              "id": 6,
+              "questionText": "Select from a list of commonly used lenders",
+              "questionType": "MultiSelect",
+              "displayOrder": 7,
+              "showClauseRef": false,
+              "isMandatory": true,
+              "isComposite": false,
+              "hasChildren": false,
+              "answers": [
+                {
+                  "id": 0,
+                  "questionId": 6,
+                  "clauseRef": "",
+                  "isDirty": false
+                },
+                {
+                  "id": 5,
+                  "questionId": 6,
+                  "option": {
+                    "id": 33,
+                    "text": "Bs",
+                    "optionGroupText": "Lender",
+                    "optionGroupId": 2,
+                    "emailAddresses": [
+                      "Contact1@Bs.com",
+                      "Contact2@Bs.com"
+                    ],
+                    "isSelected": true
+                  },
+                  "isDirty": false,
+                  "emailList": [ ]
+                },
+                {
+                  "id": 0,
+                  "option": {
+                    "id": 34,
+                    "text": "MetBank",
+                    "optionGroupText": "Lender",
+                    "optionGroupId": 2,
+                    "emailAddresses": [
+                      "Contact1@Met.com",
+                      "Contact2@Met.com"
+                    ],
+                    "isSelected": false
+                  },
+                  "isDirty": false
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "questionText": "Enter rs",
+              "helpText": "Use this field to ne lender in this field.",
+              "questionType": "Text",
+              "displayOrder": 8,
+              "showClauseRef": false,
+              "maxLength": 1000,
+              "isMandatory": false,
+              "isComposite": false,
+              "hasChildren": false,
+              "answers": [
+                {
+                  "id": 0,
+                  "answerText": "",
+                  "isDirty": false
+                }
+              ],
+              "validations": [ ],
+              "mnemonic": "AddLender"
+            },
+            {
+              "id": 8,
+              "questionText": "Final Report Distribution List",
+              "questionType": "DistributionListEditor",
+              "displayOrder": 9,
+              "showClauseRef": false,
+              "isMandatory": false,
+              "isComposite": false,
+              "hasChildren": false,
+              "answers": [
+                {
+                  "id": 7,
+                  "questionId": 8,
+                  "option": {
+                    "id": 0,
+                    "optionGroupId": 0,
+                    "isSelected": false
+                  },
+                  "isDirty": false,
+                  "emailList": [
+                    {
+                      "id": 22,
+                      "text": "Contact1@BankO.com"
+                    },
+                    {
+                      "id": 1,
+                      "text": "Contact1@Bs.com"
+                    },
+                    {
+                      "id": 2,
+                      "text": "Contact2@Bs.com"
+                    }
+                  ]
+                }
+              ],
+              "validations": [ ],
+              "mnemonic": "DistributionList"
+            }
+          ]
+        },
+      {
+          "id": 1,
+          "number": "1.5",
+          "questions": [
+            {
+              "id": 12,
+              "questionText": "contacts",
+              "questionType": "UserPicker",
+              "displayOrder": 13,
+              "showClauseRef": false,
+              "isMandatory": true,
+              "isComposite": false,
+              "hasChildren": false,
+              "answers": [
+                {
+                  "id": 12,
+                  "questionId": 12,
+                  "option": {
+                    "id": 0,
+                    "optionGroupId": 0,
+                    "isSelected": false
+                  },
+                  "isDirty": false,
+                  "userList": [
+                    {
+                      "id": 1,
+                      "firstName": "Mrtin",
+                      "lastName": "By",
+                      "emailAddress": "M.com",
+                      "feeEarnerInitials": "Dev"
+                    },
+                    {
+                      "id": 2,
+                      "firstName": "Andreas",
+                      "lastName": "V",
+                      "emailAddress": "Ar.com",
+                      "feeEarnerInitials": "Dev"
+                    }
+                  ],
+                  "emailList": [ ]
+                }
+              ],
+              "validations": [ ],
+              "mnemonic": "Contacts"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
