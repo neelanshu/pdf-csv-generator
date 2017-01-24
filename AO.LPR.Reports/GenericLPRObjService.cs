@@ -260,12 +260,18 @@ public class GenericLPRObjService
         // haschildren = true 
         // iscomposite = true 
         // and of type grid
-        
-        if (allQuestionsInAContainerOrParent.TrueForAll(x => x.isComposite ))
+
+        var areAllQuestionsComposite = allQuestionsInAContainerOrParent.TrueForAll(x => x.isComposite);
+        var doAllQuestionsHaveChildren= allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren);
+        var areAllQuestionsGridType =
+            allQuestionsInAContainerOrParent.TrueForAll(x => x.questionType.ToLower().Contains("grid"));
+
+        //only going to happen when a container need has only grid rows as questions
+        if (areAllQuestionsComposite)
         {
-            if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren))
-            {
-                if (allQuestionsInAContainerOrParent.TrueForAll(x => x.questionType.ToLower().Contains("grid")))
+            //if (doAllQuestionsHaveChildren)
+            //{
+                if (areAllQuestionsGridType)
                 {
                     if (showAs == DisplayType.aschildofquestion)
                     {
@@ -280,12 +286,15 @@ public class GenericLPRObjService
                 {
 
                 }
-            }
-            else //if parent composite questions donot have children
-            {
-                
-            }
+            //}
+            //else //if parent composite questions donot have children
+            //{
+
+            //}
         }
+
+
+
         //if parent questions in the container are non composite 
         //iscomposite = false
         else if (allQuestionsInAContainerOrParent.TrueForAll(x => !x.isComposite))
@@ -313,7 +322,7 @@ public class GenericLPRObjService
                     }
                     else if (showAs == DisplayType.aschildofquestion)
                     {
-                        //to do 
+                      
                     }
                     else if (showAs == DisplayType.aschildofcontainer)
                     {
@@ -382,6 +391,10 @@ public class GenericLPRObjService
 
                         }
                     }
+                }
+                else if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren))
+                {
+                    
                 }
             }
         }
