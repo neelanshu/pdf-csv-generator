@@ -13,9 +13,13 @@ public class GenericLPRObjService
 {
     public ReportForm GenerateReportObject()
     {
+        //var json =
+        //    File.ReadAllText(
+        //        @"C:\git\pdf-csv-generator\AO.LPR.Reports\full_json.json");
+
         var json =
-            File.ReadAllText(
-                @"C:\git\pdf-csv-generator\AO.LPR.Reports\full_json.json");
+           File.ReadAllText(
+               @"C:\git\pdf-csv-generator\AO.LPR.Reports\child_questions_json.json");
 
         var reportForm = new ReportForm() { AllSections = new List<SectionWithQuestions>() };
         var formObj = JsonConvert.DeserializeObject<RootObject>(json);
@@ -153,7 +157,7 @@ public class GenericLPRObjService
     {
         var question = new QuestionWithAnswer()
         {
-            ShowAs = DisplayType.nocontainer,
+            ShowAs = showAs,
             DisplayText = q.questionText,
             QuestionDisplayOrder = q.displayOrder,
             QuestionId = q.id,
@@ -172,7 +176,22 @@ public class GenericLPRObjService
         return question;
     }
 
-    public QuestionWithAnswer PopulateQuestionWithAnswerForNonCompositeContainer(List<Question> allQuestionsInContainer, string displayText, string displayNumber)
+    public QuestionWithAnswer PopulateQuestionWithAnswerChildOfContainer(List<Question> allQuestionsInContainer, string displayText, string displayNumber)
+    {
+        var question = new QuestionWithAnswer()
+        {
+            ShowAs = DisplayType.aschildofcontainer,
+            DisplayText = displayText,
+            QuestionDisplayOrder = allQuestionsInContainer[0].displayOrder,
+            QuestionId = allQuestionsInContainer[0].id,
+            ContainerDisplayNumberStr = displayNumber,
+            ContainerHeaderText = displayText
+        };
+
+        question.AnswerText = CreateGroupedAnswers(allQuestionsInContainer);
+        return question;
+    }
+    public QuestionWithAnswer PopulateQuestionWithAnswerForContainerAsQuestion(List<Question> allQuestionsInContainer, string displayText, string displayNumber)
     {
         var question = new QuestionWithAnswer()
         {
@@ -261,10 +280,25 @@ public class GenericLPRObjService
                 }
                 else if (showAs == DisplayType.containerasquestion)
                 {
-                        section.AllQuestions.Add(PopulateQuestionWithAnswerForNonCompositeContainer(allQuestionsInAContainerOrParent, containerText,
-                  containerNumber));
-                }
+                    if (section.SectionId == 1 && containerNumber.Equals("1.1"))
+                    {
+                        section.AllQuestions.Add(
+                            PopulateQuestionWithAnswerForContainerAsQuestion(allQuestionsInAContainerOrParent,
+                                containerText,
+                                containerNumber));
+                    }
+                    else
+                    {
+                        var containerNumberEmpty = string.Empty;
 
+                        foreach (var q in allQuestionsInAContainerOrParent.OrderBy(x => x.displayOrder))
+                        {
+                            section.AllQuestions.Add(PopulateQuestionWithAnswerForSimple(q, containerNumber,
+                                containerNumberEmpty, DisplayType.aschildofcontainer)); 
+
+                        }
+                    }
+                }
             } 
             else if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren && x.showChildrenIfOptionId > 0))
             //questions which show below a parent question
