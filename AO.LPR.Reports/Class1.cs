@@ -142,9 +142,9 @@ public class QuestionNew
 public enum DisplayType
 {
     nocontainer,
-    containerasquestion,
-    aschildofcontainer,
-    aschildofquestion,
+    containerasquestion, //only applicable for initial lenders row 
+    aschildofcontainer, //for all questions to be shown with a container as parent
+    aschildofquestion, //for all questions to be shown with a question as parent
     grid
 }
 public class QuestionWithAnswer

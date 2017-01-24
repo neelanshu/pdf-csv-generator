@@ -45,9 +45,9 @@ public class GenericLPRObjService
 
                 DisplayType showAs = isDefaultEmptyContainer ? DisplayType.nocontainer : DisplayType.aschildofcontainer;
 
-                if (!isDefaultEmptyContainer && container.questions.Count > 1)
-                    showAs = DisplayType.containerasquestion;
-
+                if (section.SectionName.ToLower().Equals("overview") && containerNumber.Equals("1.1"))
+                showAs = DisplayType.containerasquestion;
+                
                 PopulateQuestionWithAnswerRecursive(section, container.questions, containerText, containerNumber, showAs);
 
                 #region Working code
@@ -165,32 +165,27 @@ public class GenericLPRObjService
             ContainerHeaderText = containerText
         };
 
-        var answerForThisQUestion =
-            PopulateAnswerText(
-                q.answers.First(x => x.id > 0 || x.option != null && x.option.isSelected));
-
-        question.AnswerId = answerForThisQUestion.id;
-        question.AnswerText = answerForThisQUestion.answerText;
-        question.ClauseRefValue = answerForThisQUestion.clauseRef;
-
-        return question;
-    }
-
-    public QuestionWithAnswer PopulateQuestionWithAnswerChildOfContainer(List<Question> allQuestionsInContainer, string displayText, string displayNumber)
-    {
-        var question = new QuestionWithAnswer()
+        var answerForThisQUestion = q.answers.FirstOrDefault(x => x.id > 0 || (x.option != null && x.option.isSelected));
+        if (answerForThisQUestion == null)
         {
-            ShowAs = DisplayType.aschildofcontainer,
-            DisplayText = displayText,
-            QuestionDisplayOrder = allQuestionsInContainer[0].displayOrder,
-            QuestionId = allQuestionsInContainer[0].id,
-            ContainerDisplayNumberStr = displayNumber,
-            ContainerHeaderText = displayText
-        };
+            question.AnswerId = 0;
+            question.AnswerText = string.Empty;
+            question.ClauseRefValue = string.Empty;
+        }
+        else
+        {
+            answerForThisQUestion =
+                PopulateAnswerText(
+                    q.answers.First(x => x.id > 0 || (x.option != null && x.option.isSelected)));
 
-        question.AnswerText = CreateGroupedAnswers(allQuestionsInContainer);
+            question.AnswerId = answerForThisQUestion.id;
+            question.AnswerText = answerForThisQUestion.answerText;
+            question.ClauseRefValue = answerForThisQUestion.clauseRef;
+        }
+
         return question;
     }
+    
     public QuestionWithAnswer PopulateQuestionWithAnswerForContainerAsQuestion(List<Question> allQuestionsInContainer, string displayText, string displayNumber)
     {
         var question = new QuestionWithAnswer()
@@ -252,17 +247,35 @@ public class GenericLPRObjService
         // iscomposite = true 
         // and of type grid
         if (allQuestionsInAContainerOrParent.TrueForAll(
-            x => x.isComposite && x.hasChildren && x.questionType.ToLower().Contains("grid")))
+            x => x.isComposite ))
         {
-            if (showAs == DisplayType.aschildofquestion)
+            if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren))
             {
-                containerText = allQuestionsInAContainerOrParent[0].questionText;
+                if (allQuestionsInAContainerOrParent.TrueForAll(x => x.questionType.ToLower().Contains("grid")))
+                {
+                    if (showAs == DisplayType.aschildofquestion)
+                    {
+                        containerText = allQuestionsInAContainerOrParent[0].questionText;
+                    }
+
+                    section.AllQuestions.Add(PopulateQuestionWithAnswerForGrid(allQuestionsInAContainerOrParent,
+                        containerText,
+                        containerNumber));
+                }
+                else //if not all are grid type questions
+                {
+
+                }
             }
-           section.AllQuestions.Add(PopulateQuestionWithAnswerForGrid(allQuestionsInAContainerOrParent, containerText,
-                containerNumber));
+            else //if parent composite questions donot have children
+            {
+                
+            }
         }
 
-        //if questions in the container are non composite 
+
+
+        //if parent questions in the container are non composite 
         //iscomposite = false
         else if (allQuestionsInAContainerOrParent.TrueForAll(
             x => !x.isComposite && !x.questionType.ToLower().Contains("grid")))
@@ -274,39 +287,41 @@ public class GenericLPRObjService
                     foreach (var q in allQuestionsInAContainerOrParent.OrderBy(x => x.displayOrder))
                     {
                         section.AllQuestions.Add(PopulateQuestionWithAnswerForSimple(q, containerNumber,
-                            containerText, showAs)); //nocontainer
+                            containerText, showAs)); //nocontainer - questions to be shown with their own questiontext and without container heading etc
 
                     }
                 }
-                else if (showAs == DisplayType.containerasquestion)
+                else if (showAs == DisplayType.containerasquestion) //only for initial lenders display 
                 {
-                    if (section.SectionId == 1 && containerNumber.Equals("1.1"))
-                    {
-                        section.AllQuestions.Add(
+                    section.AllQuestions.Add(
                             PopulateQuestionWithAnswerForContainerAsQuestion(allQuestionsInAContainerOrParent,
                                 containerText,
                                 containerNumber));
-                    }
-                    else
+                }
+                else if (showAs == DisplayType.aschildofquestion)
+                {
+
+                }
+                else if (showAs == DisplayType.aschildofcontainer)
+                {
+                    var containerNumberEmpty = string.Empty;
+                    foreach (var q in allQuestionsInAContainerOrParent.OrderBy(x => x.displayOrder))
                     {
-                        var containerNumberEmpty = string.Empty;
+                        section.AllQuestions.Add(PopulateQuestionWithAnswerForSimple(q, containerNumberEmpty,
+                            containerText, DisplayType.aschildofcontainer));
 
-                        foreach (var q in allQuestionsInAContainerOrParent.OrderBy(x => x.displayOrder))
-                        {
-                            section.AllQuestions.Add(PopulateQuestionWithAnswerForSimple(q, containerNumber,
-                                containerNumberEmpty, DisplayType.aschildofcontainer)); 
-
-                        }
                     }
                 }
             } 
-            else if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren && x.showChildrenIfOptionId > 0))
-            //questions which show below a parent question
+            else if (allQuestionsInAContainerOrParent.TrueForAll(x => x.hasChildren))
+                //questions which show below a parent question
             {
+                if (allQuestionsInAContainerOrParent.TrueForAll(x => x.showChildrenIfOptionId > 0))
+                {
                 foreach (var q in allQuestionsInAContainerOrParent.OrderBy(x => x.displayOrder))
                 {
                     section.AllQuestions.Add(PopulateQuestionWithAnswerForSimple(q, containerNumber,
-                        containerText,showAs)); //nocontainer
+                        containerText, showAs)); //nocontainer
 
                     //check if childquestions are to be considered for display 
                     if (q.showChildrenIfOptionId ==
@@ -317,15 +332,21 @@ public class GenericLPRObjService
                         //parent as the main question
                         //keep the display order of the child question
 
-                        var allChildQuestions  = q.childQuestions.Select(TransformToQuestion).ToList();
+                        var allChildQuestions = q.childQuestions.Select(TransformToQuestion).ToList();
                         //since these are child questions 
                         //they dont need a containernumber 
 
                         var containerNumberEmpty = string.Empty;
-                        PopulateQuestionWithAnswerRecursive(section, allChildQuestions, containerText, containerNumberEmpty, DisplayType.aschildofquestion);
+                        PopulateQuestionWithAnswerRecursive(section, allChildQuestions, containerText,
+                            containerNumberEmpty, DisplayType.aschildofquestion);
                     }
                 }
             }
+            else
+            {
+                    
+            }
+        }
         }
 
     }
