@@ -250,7 +250,6 @@ namespace AO.LPR.Reports
             }
         }
 
-
         private string _answerText;
         public string answerText
         {
@@ -258,7 +257,6 @@ namespace AO.LPR.Reports
             set
             { _answerText = value; }
         }
-
         public int id { get; set; }
         public int questionId { get; set; }
         public string clauseRef { get; set; }

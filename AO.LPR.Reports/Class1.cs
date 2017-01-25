@@ -41,6 +41,8 @@ namespace AO.LPR.Reports
         public const string grid_tr = "question-grid-tr";
         public const string grid_td = "question-grid-td";
         public const string grid_td_header = "question-grid-td-header";
+        public const string header_clause_ref_tr = "header-clause-ref-tr";
+        
     }
 
 
@@ -64,6 +66,9 @@ namespace AO.LPR.Reports
         public const string header_class = "subtblheader";
         public const string complete_html_css= "{ph_css}";
         public const string complete_html_body = "{ph_body}";
+        public const string clause_ref_tr = "{ph_clause_ref_tr}";
+        public const string clause_ref_val = "{ph_clause_ref_val}";
+
     }
 
 }
@@ -211,6 +216,8 @@ public class SectionWithQuestions
     /// Order by Section first when creating pdf 
     /// </summary>
     public int SectionOrder { get; set; }
+
+    public bool ShowClauseRef { get; set; }
 }
 
 public class LprForm

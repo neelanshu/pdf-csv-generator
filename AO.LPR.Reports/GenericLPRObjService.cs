@@ -36,8 +36,13 @@ public class GenericLPRObjService
                 AllQuestions = new List<QuestionWithAnswer>()
             };
 
+            var showClauseRef = false; 
             foreach (var container in sec.questionContainers)
             {
+                if (!showClauseRef)
+                {
+                    showClauseRef = container.questions.Any(x => x.showClauseRef);
+                }
                 var isDefaultEmptyContainer = string.IsNullOrEmpty(container.containerText);
                 var containerId = container.id;
                 var containerText = container.containerText;
@@ -58,6 +63,7 @@ public class GenericLPRObjService
                 //    section.AllQuestions.Add(qu);
                 //}
             }
+            section.ShowClauseRef = showClauseRef;
             reportForm.AllSections.Add(section);
         }
         return reportForm;
@@ -102,15 +108,6 @@ public class GenericLPRObjService
         else //if question is composite //shouldnt come here 
         {
             QuestionIdsNotDealtWith.Add(question.id);
-            ////whatever is not caught here -- make a not and deal with them later
-            //if (!question.hasChildren)
-            //{
-            //    QuestionIdsNotDealtWith.Add(question.id);
-            //}
-            //else if (question.hasChildren)
-            //{
-            //    QuestionIdsNotDealtWith.Add(question.id);
-            //}
         }
     }
 
@@ -243,7 +240,8 @@ public class GenericLPRObjService
             QuestionDisplayOrder = allQuestionsInContainer[0].displayOrder,
             QuestionId = allQuestionsInContainer[0].id,
             ContainerDisplayNumberStr = displayNumber,
-            ContainerHeaderText = displayText
+            ContainerHeaderText = displayText,
+            ClauseRefValue = string.Empty
         };
 
         question.AnswerText = CreateGroupedAnswers(allQuestionsInContainer);
@@ -258,7 +256,8 @@ public class GenericLPRObjService
                 QuestionDisplayOrder = allQuestionsInGrid[0].displayOrder,
                 QuestionId = allQuestionsInGrid[0].id,
                 ContainerDisplayNumberStr = displayNumber,
-                ContainerHeaderText = displayText
+                ContainerHeaderText = displayText,
+                ClauseRefValue = string.Empty
             };
 
             question.Grid = CreateGrid(allQuestionsInGrid);

@@ -9,10 +9,8 @@ public class PdfReportGenerator : IReportGenerator
 
     string _templateLocationBasePath =
            @"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\templates\{0}.html";
-
     public string GenerateHtml(ReportForm reportContent)
     {
-       
         StringBuilder reportHtml = new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.report)));
 
         /*START - Header update and replace in report html */
@@ -37,6 +35,18 @@ public class PdfReportGenerator : IReportGenerator
             StringBuilder sectionHtml =
                 new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.section_table)));
 
+            string questionTemplateName = PdfTemplates.questions_simple_tr;
+            if (section.ShowClauseRef)
+            {
+                string clauseRefTr=  File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.header_clause_ref_tr));
+                sectionHtml.Replace(Placeholders.clause_ref_tr,clauseRefTr);
+
+                questionTemplateName = PdfTemplates.questions_simple_clause_ref_tr;
+            }
+            else
+            {
+                sectionHtml.Replace(Placeholders.clause_ref_tr, string.Empty);
+            }
 
             sectionHtml.Replace(Placeholders.section_name, section.SectionName);
 
@@ -47,12 +57,7 @@ public class PdfReportGenerator : IReportGenerator
 
             foreach (var question in section.AllQuestions.OrderBy(x => x.QuestionDisplayOrder))
             {
-                string templateName = PdfTemplates.questions_simple_tr;
-                if (question.ShowClauseRef) templateName = PdfTemplates.questions_simple_clause_ref_tr;
-                //if (question.ShowAs == DisplayType.grid && question.Grid.AllRows[0].AllCols.Count > 2)
-                //    templateName = PdfTemplates.questions_simple_tr_updated_col_width;
-
-                allQuestionsInSectionHtml.Append(GetQuestionsHtmlContainerDisplayNumber(question, templateName));
+                allQuestionsInSectionHtml.Append(GetQuestionsHtmlContainerDisplayNumber(question, questionTemplateName));
             }
 
             /*Append #2 - Section creation complete - all questions*/
@@ -69,11 +74,8 @@ public class PdfReportGenerator : IReportGenerator
             return reportHtml.ToString();
         
     }
-
-
-public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question, string templateName)
+    public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question, string templateName)
     {
-
         StringBuilder questionsHtml =
                  new StringBuilder(
                      File.ReadAllText(string.Format(_templateLocationBasePath, templateName)));
@@ -81,6 +83,7 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
         var textToShowAsAnswerText = question.AnswerText;
         var textToShowAsQuestionText = question.DisplayText;
         var textToShowAsQuestionDisplayNumber = question.ContainerDisplayNumberStr;
+        var textToShowAsClauseRefVal = question.ClauseRefValue;
 
         if (question.ShowAs == DisplayType.aschildofcontainer || question.ShowAs == DisplayType.aschildofquestion) textToShowAsQuestionDisplayNumber = string.Empty;
 
@@ -88,18 +91,17 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
         if (string.IsNullOrEmpty(textToShowAsAnswerText) && question.ShowAs == DisplayType.grid) return string.Empty;
 
-           questionsHtml.Replace(Placeholders.question_display_number,
-                textToShowAsQuestionDisplayNumber);
-            questionsHtml.Replace(Placeholders.question_text, textToShowAsQuestionText);
-            //add clauseref here 
+        questionsHtml.Replace(Placeholders.question_display_number,
+            textToShowAsQuestionDisplayNumber);
+        questionsHtml.Replace(Placeholders.question_text, textToShowAsQuestionText);
 
-            questionsHtml.Replace(Placeholders.answer_text, textToShowAsAnswerText);
+        questionsHtml.Replace(Placeholders.answer_text, textToShowAsAnswerText);
+
+        questionsHtml.Replace(Placeholders.clause_ref_val, textToShowAsClauseRefVal);
 
         return questionsHtml.ToString(); 
 
     }
-
-
     public string GetQuestionHtmlForGridType(GridTable grid)
     {
         if (grid.AllRows.Count == 1 && grid.AllRows[0].RowNo == 1)
