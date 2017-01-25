@@ -80,6 +80,7 @@
     <Content Include="report\pdf\templates\header-clause-ref-tr.html" />
     <Content Include="report\pdf\templates\questions-simple-tr.html" />
     <Content Include="report\pdf\templates\section-table.html" />
+    <Content Include="report\pdf\templates\section-table-with-clause-ref.html" />
     <Content Include="report\pdf\templates\header.html" />
     <Content Include="report\pdf\templates\report.html" />
     <Content Include="TextFile.html" />

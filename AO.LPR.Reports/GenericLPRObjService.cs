@@ -57,11 +57,7 @@ public class GenericLPRObjService
 
                 PopulateQuestionWithAnswerRecursiveNew(section, container.questions, containerText,
                     containerNumber, showAs);
-
-                //foreach (var qu in allQuestions)
-                //{
-                //    section.AllQuestions.Add(qu);
-                //}
+               
             }
             section.ShowClauseRef = showClauseRef;
             reportForm.AllSections.Add(section);
@@ -87,6 +83,13 @@ public class GenericLPRObjService
                     if (question.showChildrenIfOptionId ==
                         question.answers.First(x => x.id > 0 || x.option != null && x.option.isSelected).option.id)
                     {
+                        //string clauseRefValueFromParent = string.Empty;
+                        //if (question.answers.Any(x => !string.IsNullOrEmpty(x.clauseRef)))
+                        //{
+                        //    var ans = question.answers.FirstOrDefault(x => !string.IsNullOrEmpty(x.clauseRef));
+                        //    clauseRefValueFromParent = ans.clauseRef;
+                        //}
+
                         var allChildQuestions = question.childQuestions.Select(TransformToQuestion).ToList();
                         PopulateQuestionWithAnswerRecursiveNew(section, allChildQuestions, containerText,
                             containerNumberLocal,
@@ -96,6 +99,14 @@ public class GenericLPRObjService
                 else
                 {
                     //TOD - check if this is needed 
+
+                    //string clauseRefValueFromParent = string.Empty;
+                    //if (question.answers.Any(x => !string.IsNullOrEmpty(x.clauseRef)))
+                    //{
+                    //    var ans = question.answers.FirstOrDefault(x => !string.IsNullOrEmpty(x.clauseRef));
+                    //    clauseRefValueFromParent = ans.clauseRef;
+                    //}
+
                     var allChildQuestions = question.childQuestions.Select(TransformToQuestion).ToList();
                     PopulateQuestionWithAnswerRecursiveNew(section, allChildQuestions, containerText,
                         containerNumberLocal,
@@ -112,7 +123,7 @@ public class GenericLPRObjService
     }
 
     public QuestionWithAnswer PopulateQuestionWithAnswerForGridWrapper(List<Question> allQuestionsInAContainerOrParent,
-        string containerText, string containerNumber, DisplayType showAs)
+        string containerText, string containerNumber, DisplayType showAs, string clauseRefValueFromParent)
     {
         if (showAs == DisplayType.aschildofquestion)
         {
@@ -120,7 +131,7 @@ public class GenericLPRObjService
         }
 
         return PopulateQuestionWithAnswerForGrid(allQuestionsInAContainerOrParent, containerText,
-            containerNumber);
+            containerNumber, clauseRefValueFromParent);
     }
 
     public void PopulateQuestionWithAnswerRecursiveNew(SectionWithQuestions section,
@@ -135,9 +146,17 @@ public class GenericLPRObjService
         if (allQuestionsInAContainerOrParent.TrueForAll(
             x => x.isComposite && x.hasChildren && x.questionType.ToLower().Contains("grid")))
         {
+            string clauseRefValueFromParent = string.Empty;
+            if (allQuestionsInAContainerOrParent.Any(x=>x.answers.Any(y => !string.IsNullOrEmpty(y.clauseRef))))
+            {
+                var ans =
+                    allQuestionsInAContainerOrParent[0].answers.FirstOrDefault(x => !string.IsNullOrEmpty(x.clauseRef));
+                clauseRefValueFromParent = ans.clauseRef;
+            }
+
             section.AllQuestions.Add(PopulateQuestionWithAnswerForGridWrapper(allQuestionsInAContainerOrParent,
                 containerText,
-                containerNumber, showAs));
+                containerNumber, showAs, clauseRefValueFromParent));
 
             edgeCased = true;
         }
@@ -200,7 +219,7 @@ public class GenericLPRObjService
         {
             question.AnswerId = 0;
             question.AnswerText = string.Empty;
-            question.ClauseRefValue = string.Empty;
+            
         }
         else
         {
@@ -210,7 +229,13 @@ public class GenericLPRObjService
 
             question.AnswerId = answerForThisQUestion.id;
             question.AnswerText = answerForThisQUestion.answerText;
-            question.ClauseRefValue = answerForThisQUestion.clauseRef;
+            //question.ClauseRefValue = answerForThisQUestion.clauseRef;
+        }
+
+        if (q.answers.Any(x => !string.IsNullOrEmpty(x.clauseRef)))
+        {
+            var ans = q.answers.FirstOrDefault(x => !string.IsNullOrEmpty(x.clauseRef));
+            question.ClauseRefValue = ans.clauseRef;
         }
 
         return question;
@@ -228,6 +253,7 @@ public class GenericLPRObjService
             ContainerDisplayNumberStr = displayNumber,
             ContainerHeaderText = containerText
         };
+
 
         return containerAsFirstQuestion;
     }
@@ -247,7 +273,7 @@ public class GenericLPRObjService
         question.AnswerText = CreateGroupedAnswers(allQuestionsInContainer);
         return question;
     }
-    public QuestionWithAnswer PopulateQuestionWithAnswerForGrid(List<Question> allQuestionsInGrid, string displayText, string displayNumber)
+    public QuestionWithAnswer PopulateQuestionWithAnswerForGrid(List<Question> allQuestionsInGrid, string displayText, string displayNumber, string clauseRefValueFromParent)
     {
         var question = new QuestionWithAnswer()
             {
@@ -257,7 +283,7 @@ public class GenericLPRObjService
                 QuestionId = allQuestionsInGrid[0].id,
                 ContainerDisplayNumberStr = displayNumber,
                 ContainerHeaderText = displayText,
-                ClauseRefValue = string.Empty
+                ClauseRefValue = clauseRefValueFromParent
             };
 
             question.Grid = CreateGrid(allQuestionsInGrid);

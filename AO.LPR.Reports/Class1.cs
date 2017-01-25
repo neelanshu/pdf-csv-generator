@@ -28,6 +28,7 @@ namespace AO.LPR.Reports
     {
         public const string complete_html_report= "complete-html-report";
         public const string section_table = "section-table";
+        public const string section_table_with_clause_ref = "section-table-with-clause-ref";
         public const string questions_simple_tr = "questions-simple-tr";
         public const string questions_simple_clause_ref_tr = "questions-simple-clause-ref-tr";
         public const string questions_simple_tr_updated_col_width= "questions-simple-tr-with-updated-col-width";

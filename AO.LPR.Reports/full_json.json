@@ -1800,7 +1800,7 @@
                     "optionGroupId": 0,
                     "isSelected": true
                   },
-                  "clauseRef": "",
+                  "clauseRef": "1.2",
                   "isDirty": false,
                   "emailList": []
                 }
@@ -2205,7 +2205,7 @@
                     "optionGroupId": 0,
                     "isSelected": true
                   },
-                  "clauseRef": "",
+                  "clauseRef": "2.8.8",
                   "isDirty": false,
                   "emailList": []
                 }
@@ -2435,7 +2435,7 @@
                     {
                       "id": 0,
                       "questionId": 24,
-                      "clauseRef": "",
+                      "clauseRef": "3.2",
                       "isDirty": false
                     }
                   ],
@@ -4017,7 +4017,7 @@
                     {
                       "id": 0,
                       "questionId": 49,
-                      "clauseRef": "",
+                      "clauseRef": "1.589",
                       "isDirty": false
                     }
                   ],
@@ -4049,7 +4049,7 @@
                     "optionGroupId": 0,
                     "isSelected": true
                   },
-                  "clauseRef": "",
+                  "clauseRef": "2.98",
                   "isDirty": false,
                   "emailList": []
                 }
@@ -4162,7 +4162,7 @@
                     {
                       "id": 0,
                       "questionId": 51,
-                      "clauseRef": "",
+                      "clauseRef": "4.6",
                       "isDirty": false
                     }
                   ],
@@ -4307,7 +4307,7 @@
                     {
                       "id": 0,
                       "questionId": 53,
-                      "clauseRef": "",
+                      "clauseRef": "10.2",
                       "isDirty": false
                     }
                   ],

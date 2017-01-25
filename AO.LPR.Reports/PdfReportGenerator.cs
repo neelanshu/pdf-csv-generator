@@ -31,23 +31,20 @@ public class PdfReportGenerator : IReportGenerator
 
         foreach (var section in reportContent.AllSections)
         {
-
-            StringBuilder sectionHtml =
-                new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.section_table)));
-
+            string sectionTemplateName = PdfTemplates.section_table;
             string questionTemplateName = PdfTemplates.questions_simple_tr;
+            string clauseRefTr = string.Empty;
+
             if (section.ShowClauseRef)
             {
-                string clauseRefTr=  File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.header_clause_ref_tr));
-                sectionHtml.Replace(Placeholders.clause_ref_tr,clauseRefTr);
-
+                clauseRefTr = File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.header_clause_ref_tr));
                 questionTemplateName = PdfTemplates.questions_simple_clause_ref_tr;
-            }
-            else
-            {
-                sectionHtml.Replace(Placeholders.clause_ref_tr, string.Empty);
+                sectionTemplateName = PdfTemplates.section_table_with_clause_ref;
             }
 
+            var sectionHtml = new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, sectionTemplateName)));
+
+            sectionHtml.Replace(Placeholders.clause_ref_tr, clauseRefTr);
             sectionHtml.Replace(Placeholders.section_name, section.SectionName);
 
             var allQuestionsInSectionHtml = new StringBuilder();
