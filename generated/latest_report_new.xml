@@ -1,0 +1,875 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>neelanshu</LastAuthor>
+  <Created>2017-01-25T15:38:35Z</Created>
+  <LastSaved>2017-01-25T15:38:35Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7932</WindowHeight>
+  <WindowWidth>17268</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s58">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#8B0000" ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000" ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Georgia" x:Family="Roman" ss:Size="12" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#D9E2DA" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s90">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#000000"
+    ss:Bold="1" ss:Italic="1"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s91">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s92">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#F5F5F5" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Percent"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="latest_report_new">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="160" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s81" ss:DefaultColumnWidth="50.4"
+   ss:DefaultRowHeight="15.600000000000001">
+   <Column ss:StyleID="s81" ss:Width="201.6" ss:Span="1"/>
+   <Column ss:Index="3" ss:StyleID="s81" ss:Width="122.1"/>
+   <Column ss:StyleID="s81" ss:Width="145.79999999999998"/>
+   <Column ss:StyleID="s81" ss:Width="50.7"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="44.7"/>
+   <Column ss:StyleID="s81" ss:Width="67.5"/>
+   <Row>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Allen &amp; Overy</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Loan portfolio report</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">The below loan portfolio report has been created by Allen &amp; Overy LLP.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row ss:Height="240">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">This loan portfolio report is intended to classify portfolio loans and assist agency teams in ongoing loan management. It summarises certain key terms of the documentation as at 15:38 on 25/01/2017, but is not a substitute for the documentation itself. It does not constitute legal advice and should not be relied upon in relation to any amendment, waiver, dispute or other transaction relating to the underlying loan and neither Allen &amp; Overy LLP nor any other member of the A&amp;O group is liable for any loss arising from such use or reliance.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row ss:Height="75">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">If you require any further information, please contact one of the people listed in section 1.5 of this report or your usual A&amp;O contact.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s58"/>
+   </Row>
+   <Row ss:Height="30">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Your A&amp;O Reference is TestForm1 - 1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="3" ss:StyleID="s85"><Data ss:Type="String">Overview</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">1.1000000000000001</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Initial lenders in the syndicate:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s87"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#000000">Lender</Font></B><Font
+       html:Color="#000000"> - Barclays, Bank of Tokyo Mitsubishi </Font><B><Font
+        html:Color="#000000">DistributionList</Font></B><Font html:Color="#000000"> - Contact1@BankOfTokyoMitsubishi.com, Contact1@Barclays.com, Contact2@Barclays.com</Font></ss:Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">1.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Principal Sponsor (if any)</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">My Test Principal Borrower</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">1.3</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Date of original credit agreement</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s89"><Data ss:Type="DateTime">2017-01-13T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">1.4</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Date of all amendments/amendments and restatements on or after the date of the original credit agreement</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amendments</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Date</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">Amendment</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="DateTime">2017-01-13T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">A&amp;O contacts</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Martin.Bentley@AllenOver.com, Andreas.VanGreunen@AllenOver.com</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="6" ss:StyleID="s85"><Data ss:Type="String">Facilities</Data></Cell>
+   </Row>
+   <Row ss:Height="30.599999999999998">
+    <Cell ss:MergeDown="2" ss:StyleID="s86"><Data ss:Type="Number">2.1</Data></Cell>
+    <Cell ss:MergeDown="2" ss:StyleID="s86"><Data ss:Type="String">Total Commitments</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">FacilityType</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Ranking</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">MaturityDate</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">Aquisition</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Free text</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">HUF</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="DateTime">2017-01-31T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">Revolving</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Mezzanine</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">EUR</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">900000</Data></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="DateTime">2222-01-31T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.2000000000000002</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Purpose clause</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Party fun</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.2999999999999998</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">What level of consent is required to approve an extension of maturity?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Autonomous</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.4</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Extension options</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Evergreen</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain interest rate floors (eg. LIBOR may not be below zero)?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.6</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is a disposal a mandatory prepayment event?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">What is the size of any general permitted basket?</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">GBP</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">1000</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.7</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is a change of control a mandatory prepayment event?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.8</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain a tax gross-up?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.9</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain a negative pledge?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">What is the size of any general permitted basket?</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">GBP</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">2000</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain a restriction on incurring financial indebtedness?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">What is the size of any general permitted basket?</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">CAD</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">3000</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.11</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain the following financial covenants</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">debt:EBITDA (leverage)?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">EBITDA:interest (interest cover)?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Cashflow:debt service costs (cashflow cover)?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Tangible net worth?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.12</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain any other financial covenants?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.13</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain a guarantor coverage covenant?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.14</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain obligations for the borrower to provide the following to the agent/lenders:</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"/>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">All documents dispatched by the borrower to its shareholders or its creditors generally?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Details of any litigation, arbitration or administrative proceedings?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Notification of any default?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Further information on request regarding the financial condition, business or operations of any member of the group?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Notification of any change in ownership/shareholding of the group?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Notification of any changes in the constitutive documents of any obligor?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consolidated annual financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Further option:</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">PeriodEnd</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Month(s) after period end</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consolidated semi-annual financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Further option:</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">PeriodEnd</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Month(s) after period end</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consolidated quarterly financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Further option:</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">PeriodEnd</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Week(s) after period end</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consolidated monthly financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Further option:</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">PeriodEnd</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Week(s) after period end</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Unconsolidated annual financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Further option:</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">PeriodEnd</Data></Cell>
+   </Row>
+   <Row ss:Height="30.599999999999998">
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Business Day(s) after period end</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Unconsolidated semi-annual financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Unconsolidated quarterly financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Unconsolidated monthly financial statements?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.15</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is failure to pay an event a default?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.16</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is there a material adverse changed event of a default?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.17</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">What cross-default or cross acceleration is provided for?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">None</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">2.1800000000000002</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">What is the cross-default or cross-acceleration threshold?</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">GBP</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">5000</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.19</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit aggreement contain a set-off clause in favour of the lender?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.2000000000000002</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Governing law of principal credit aggreement:</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">qweqwe asdasd</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">2.21</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit aggreement provide for arbitration?</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Voting</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">3.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Voting level for most decisions?</Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="Number">0.66666666666666674</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Can a lender split its commitments/loans when voting?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">3.3</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Details of split voting (if applicable):</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">qwepoi qwepoi qwepoi!!</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">3.4</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Can the hedge counterparties vote before enforcement?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">3.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Can the hedge counterparties vote after enforcement?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Obligors</Data></Cell>
+   </Row>
+   <Row ss:Height="76.8">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.0999999999999996</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">List the Obligors by name, juristiction and whether they are a borrower, guarantor, and/or security provider on a new line for each below: E.g. Name, Jurisdiction, Borrower</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">asdasd, qweqwe, zxczxc</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Do all guarantors guarantee all borrowings?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.3</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the agreement allow additional borrowers?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.4000000000000004</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consent level for additional borrowers in existing juridictions:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Non-standard consent level (i.e. Not all lender or majority lender (66 2/3%))</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consent level for additional borrowers in new juridictions:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Majority lender (66 2/3%)</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.5999999999999996</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the aggreement allow additional guarantors:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">All lender</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.7</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consent level for additional guarantors in existing juridictions:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">All lender</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">4.8</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Consent level for additional guarantors in new juridictions:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Majority lender (66 2/3%)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Security and structure</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.0999999999999996</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is there security?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Brief description of security:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">werpoi werpoi werpoi werpoi!!</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.3</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">What laws govern the security agreements?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">asdl;k as;dlk asd;lk asd</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.4</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is there an intercreditor/subordination/priority agreement?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Do the hedge counterparties benefit from the security?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">5.6</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Have the original security documents been provided to the security trustee facility agent?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="3" ss:StyleID="s85"><Data ss:Type="String">Transferability and disclosure</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">When an event of default is outstanding, are the following permitted?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to existing lenders:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to existing lenders:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to banks and financial institutions:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to banks and financial institutions:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">When no event of default is outstanding, are the following permitted?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to existing lenders:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to existing lenders:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to banks and financial institutions:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to banks and financial institutions:</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">With consultation</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.3</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Would a potential transferee be required to enter into a non-disclosure agreement?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.4</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">If consent is required for any transfer, is it deemed given if not refused?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.5</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Is the consent of any issuing bank, agent or trustee required for a transfer?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row ss:Height="61.5">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.6</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">In exceptional circumstances only, please provide any other relevant information for transfer (e.g. exceptional restrictions, transfer requirements)</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">werwerwerwerwer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">6.7</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Minimum transfer amount</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Currency</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Amount</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="String">CAD</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="Number">5000</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">6.8</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Can lenders grant security over their rights?</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="3" ss:StyleID="s85"><Data ss:Type="String">Loan management</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">7.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Permitted interest periods</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">1 month</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">7.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">What consent requirements are there for non-standard interest periods (if any)</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:MergeAcross="1" ss:StyleID="s86"><Data ss:Type="String">None!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">7.3</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Notice period for submitting a utilisation request for sterling</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Days</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Day(s)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">7.4</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Notice period for submitting a utilisation request for non-sterling</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Days</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Business day(s)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">7.5</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Notice period for prepayment of loans</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Days</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Business day(s)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="Number">7.6</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Notice period for cancellation of commitments</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Days</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3" ss:StyleID="s91"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Business day(s)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Pricing</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">8.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">What is the initial margin (% per annum)?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">8.1999999999999993</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Are there commitment fees?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">No</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">8.3000000000000007</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Are there utilisation fees?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">8.4</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the margin vary (by references to a margin grid or otherwise)?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Defaulting Lenders</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">9.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Does the credit agreement contain a concept of Defaulting Lenders?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">9.1999999999999993</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Can Obligors set off against money owed to Defaulting Lenders?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Agents</Data></Cell>
+   </Row>
+   <Row ss:Height="30.9">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">10.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Agent type (E.g. Facility agent, security agent) and agent name?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Security Agent qweqwe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="20.025000000000002">
+    <Cell ss:MergeAcross="2" ss:StyleID="s85"><Data ss:Type="String">Other information</Data></Cell>
+   </Row>
+   <Row ss:Height="46.2">
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">11.1</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Please give a brief summary of any other significant information not covered by the questions above:</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">qweopiu qweoiu qwe!!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">11.2</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Test question. This must be numeric?</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">123</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s84"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -7,33 +7,76 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using AO.LPR.Reports;
 using iTextSharp.text.html.simpleparser;
 using iTextSharp.tool.xml;
+using Microsoft.Office.Interop.Excel;
 
 namespace ClassLibrary1
 {
     public class Class1
     {
+
+        string excelTemplateLocationBasePath =
+               @"C:\git\pdf-csv-generator\AO.LPR.Reports\report\excel\templates\{0}.html";
+
+        private string generatedFolderBasePath = @"C:\git\pdf-csv-generator\generated\";
+
+        private void CreateHtml(string cssText, string htmlText)
+        {
+            string htmlPath = generatedFolderBasePath + "latest_report_new.html";
+            
+            StringBuilder htmlTemplate =
+                 new StringBuilder(
+                     File.ReadAllText(string.Format(excelTemplateLocationBasePath, PdfTemplates.complete_html_report)));
+
+            htmlTemplate.Replace(Placeholders.complete_html_css, cssText);
+            htmlTemplate.Replace(Placeholders.complete_html_body, htmlText);
+
+            using (var fs = File.Open(htmlPath, FileMode.Create, FileAccess.Write, FileShare.Read))
+            {
+                using (StreamWriter s = new StreamWriter(fs))
+                {
+                    s.Write(htmlTemplate);
+                }
+            }
+        }
+        private void GenerateExcelReport()
+        {
+            string htmlPath = generatedFolderBasePath + "latest_report_new.html";
+            string csvPath = generatedFolderBasePath + "latest_report_new.csv";
+            string excelPath = generatedFolderBasePath + "latest_report_new.xlsx";
+
+            if (File.Exists(excelPath))
+                File.Delete(excelPath);
+            
+            if (File.Exists(csvPath))
+                File.Delete(csvPath);
+
+            Application excel = new Application();
+
+            Workbook xls1 = excel.Workbooks.Open(htmlPath);
+            xls1.SaveAs(csvPath, XlFileFormat.xlCSVWindows);
+            xls1.Close();
+
+            Workbook xls2 = excel.Workbooks.Open(htmlPath);
+            xls2.SaveAs(excelPath, XlFileFormat.xlOpenXMLWorkbook);
+            xls2.Close();
+        }
+
         public void CreatePdfNewNew()
         {
             var cssText = System.IO.File.ReadAllText(@"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\css\pdf.css");
-            //var htmlText = System.IO.File.ReadAllText(@"C:\Users\zadmsharmane\Documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\new-Copy.html");
-
-            //var formObj = new GenericLPRObjService().GenerateReportObject();
             var formObj = new GenericLPRObjService().GenerateReportObjectNew();
             var htmlText = new PdfReportGenerator().GenerateHtml(formObj);
 
-            var cssArray = cssText.Trim().Split('}');
+            CreateHtml(cssText,htmlText);
+            GenerateExcelReport();
 
+            var cssArray = cssText.Trim().Split('}');
             var cssClassesString = string.Join("} ", cssArray);
 
-
-            string pdfPath =
-                @"C:\git\pdf-csv-generator\generatedpdf\latest_pdf.pdf";
-
-            //string pdfPath =
-              //  @"C:\Users\zadmsharmane\Documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\form_pdf.pdf";
-
+            string pdfPath =generatedFolderBasePath + "latest_report.pdf";
 
             FileStream pdfStream = new System.IO.FileStream(pdfPath, System.IO.FileMode.Create,
      System.IO.FileAccess.Write, System.IO.FileShare.None);

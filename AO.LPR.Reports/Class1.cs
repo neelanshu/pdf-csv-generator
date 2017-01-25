@@ -26,6 +26,7 @@ namespace AO.LPR.Reports
 
     public static class PdfTemplates
     {
+        public const string complete_html_report= "complete-html-report";
         public const string section_table = "section-table";
         public const string questions_simple_tr = "questions-simple-tr";
         public const string questions_simple_clause_ref_tr = "questions-simple-clause-ref-tr";
@@ -60,8 +61,9 @@ namespace AO.LPR.Reports
         public const string grid_col_text = "{ph_grid_col_text}";
         public const string grid_columns = "{ph_grid_columns}";
         public const string grid_rows= "{ph_grid_rows}";
-
         public const string header_class = "subtblheader";
+        public const string complete_html_css= "{ph_css}";
+        public const string complete_html_body = "{ph_body}";
     }
 
 }

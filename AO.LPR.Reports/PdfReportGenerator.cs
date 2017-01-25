@@ -7,16 +7,16 @@ using AO.LPR.Reports;
 public class PdfReportGenerator : IReportGenerator
 {
 
-    string basePath =
+    string _templateLocationBasePath =
            @"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\templates\{0}.html";
 
     public string GenerateHtml(ReportForm reportContent)
     {
        
-        StringBuilder reportHtml = new StringBuilder(File.ReadAllText(string.Format(basePath, PdfTemplates.report)));
+        StringBuilder reportHtml = new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.report)));
 
         /*START - Header update and replace in report html */
-        StringBuilder headerHtml = new StringBuilder(File.ReadAllText(string.Format(basePath, PdfTemplates.header)));
+        StringBuilder headerHtml = new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.header)));
 
         headerHtml.Replace(Placeholders.date, DateTime.Now.Date.ToShortDateString());
         headerHtml.Replace(Placeholders.time, DateTime.Now.ToShortTimeString());
@@ -35,7 +35,7 @@ public class PdfReportGenerator : IReportGenerator
         {
 
             StringBuilder sectionHtml =
-                new StringBuilder(File.ReadAllText(string.Format(basePath, PdfTemplates.section_table)));
+                new StringBuilder(File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.section_table)));
 
 
             sectionHtml.Replace(Placeholders.section_name, section.SectionName);
@@ -76,7 +76,7 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
         StringBuilder questionsHtml =
                  new StringBuilder(
-                     File.ReadAllText(string.Format(basePath, templateName)));
+                     File.ReadAllText(string.Format(_templateLocationBasePath, templateName)));
 
         var textToShowAsAnswerText = question.AnswerText;
         var textToShowAsQuestionText = question.DisplayText;
@@ -107,14 +107,14 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
         StringBuilder gridTableHtml =
                  new StringBuilder(
-                     File.ReadAllText(string.Format(basePath,PdfTemplates.grid_table)));
+                     File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.grid_table)));
 
         StringBuilder allTrs = new StringBuilder();
 
         foreach (var row in grid.AllRows.OrderBy(x => x.RowNo))
         {
             StringBuilder trHtml = new StringBuilder(
-                     File.ReadAllText(string.Format(basePath, PdfTemplates.grid_tr)));
+                     File.ReadAllText(string.Format(_templateLocationBasePath, PdfTemplates.grid_tr)));
 
             StringBuilder allTds = new StringBuilder();
             var templateName = row.RowNo == 1 ? PdfTemplates.grid_td_header : PdfTemplates.grid_td;
@@ -123,7 +123,7 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
             {
                 
                 StringBuilder tdHtml = new StringBuilder(
-                     File.ReadAllText(string.Format(basePath, templateName)));
+                     File.ReadAllText(string.Format(_templateLocationBasePath, templateName)));
 
                 tdHtml.Replace(Placeholders.grid_col_text, col.ColText);
                 allTds.Append(tdHtml);
