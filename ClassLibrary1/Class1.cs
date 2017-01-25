@@ -19,7 +19,8 @@ namespace ClassLibrary1
             var cssText = System.IO.File.ReadAllText(@"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\css\pdf.css");
             //var htmlText = System.IO.File.ReadAllText(@"C:\Users\zadmsharmane\Documents\visual studio 2015\Projects\ClassLibrary1\ClassLibrary1\new-Copy.html");
 
-            var formObj = new GenericLPRObjService().GenerateReportObject();
+            //var formObj = new GenericLPRObjService().GenerateReportObject();
+            var formObj = new GenericLPRObjService().GenerateReportObjectNew();
             var htmlText = new PdfReportGenerator().GenerateHtml(formObj);
 
             var cssArray = cssText.Trim().Split('}');

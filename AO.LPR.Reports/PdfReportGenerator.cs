@@ -83,6 +83,8 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
         if (question.ShowAs == DisplayType.grid) textToShowAsAnswerText = GetQuestionHtmlForGridType(question.Grid);
 
+        if (string.IsNullOrEmpty(textToShowAsAnswerText) && question.ShowAs == DisplayType.grid) return string.Empty;
+
            questionsHtml.Replace(Placeholders.question_display_number,
                 textToShowAsQuestionDisplayNumber);
             questionsHtml.Replace(Placeholders.question_text, textToShowAsQuestionText);
@@ -97,7 +99,9 @@ public string GetQuestionsHtmlContainerDisplayNumber(QuestionWithAnswer question
 
     public string GetQuestionHtmlForGridType(GridTable grid)
     {
-        
+        if (grid.AllRows.Count == 1 && grid.AllRows[0].RowNo == 1)
+            return string.Empty;
+
         StringBuilder gridTableHtml =
                  new StringBuilder(
                      File.ReadAllText(string.Format(basePath,PdfTemplates.grid_table)));
