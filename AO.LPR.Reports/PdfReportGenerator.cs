@@ -20,6 +20,7 @@ public class PdfReportGenerator : IReportGenerator
 
         headerHtml.Replace(Placeholders.date, DateTime.Now.Date.ToShortDateString());
         headerHtml.Replace(Placeholders.time, DateTime.Now.ToShortTimeString());
+        headerHtml.Replace(Placeholders.ref_number, reportContent.FormName + " - " + reportContent.Id);
 
         /*Append #1 - Header added*/
         reportHtml.Replace(Placeholders.header, headerHtml.ToString());
@@ -48,6 +49,8 @@ public class PdfReportGenerator : IReportGenerator
             {
                 string templateName = PdfTemplates.questions_simple_tr;
                 if (question.ShowClauseRef) templateName = PdfTemplates.questions_simple_clause_ref_tr;
+                //if (question.ShowAs == DisplayType.grid && question.Grid.AllRows[0].AllCols.Count > 2)
+                //    templateName = PdfTemplates.questions_simple_tr_updated_col_width;
 
                 allQuestionsInSectionHtml.Append(GetQuestionsHtmlContainerDisplayNumber(question, templateName));
             }

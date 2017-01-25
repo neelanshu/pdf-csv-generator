@@ -60,11 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="report\pdf\css\pdf.css" />
+    <Content Include="report\pdf\images\allen_overy_logo.png" />
     <Content Include="report\pdf\templates\question-grid-td-header.html" />
     <Content Include="report\pdf\templates\question-grid-td.html" />
     <Content Include="report\pdf\templates\question-grid-tr.html" />
     <Content Include="report\pdf\templates\questions-container-clause-ref-tr.html" />
     <Content Include="report\pdf\templates\questions-simple-clause-ref-tr.html" />
+    <Content Include="report\pdf\templates\questions-simple-tr-with-updated-col-width.html" />
     <Content Include="report\pdf\templates\questions-with-child - Copy.html" />
     <Content Include="report\pdf\templates\question-grid-table.html" />
     <Content Include="report\pdf\templates\questions-clause-ref-table.html" />
