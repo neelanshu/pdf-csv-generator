@@ -1,166 +1,114 @@
-Allen & Overy,,,,,,,
-,,,,,,,
-Loan portfolio report,,,,,,,
-,,,,,,,
-The below loan portfolio report has been created by Allen & Overy LLP.,,,,,,,
-,,,,,,,
-"This loan portfolio report is intended to classify portfolio loans and assist agency teams in ongoing loan management. It summarises certain key terms of the documentation as at 09:48 on 26/01/2017, but is not a substitute for the documentation itself. It does not constitute legal advice and should not be relied upon in relation to any amendment, waiver, dispute or other transaction relating to the underlying loan and neither Allen & Overy LLP nor any other member of the A&O group is liable for any loss arising from such use or reliance.",,,,,,,
-,,,,,,,
-"If you require any further information, please contact one of the people listed in section 1.5 of this report or your usual A&O contact.",,,,,,,
-,,,,,,,
-Your A&O Reference is TestForm1 - 1,,,,,,,
-,,,,,,,
-Overview,,,,,,,
-1.1,Initial lenders in the syndicate:,"Lender - Barclays, Bank of Tokyo Mitsubishi DistributionList - Contact1@BankOfTokyoMitsubishi.com, Contact1@Barclays.com, Contact2@Barclays.com",,,,,
-1.2,Principal Sponsor (if any),My Test Principal Borrower,,,,,
-1.3,Date of original credit agreement,1/13/2017,,,,,
-1.4,Date of all amendments/amendments and restatements on or after the date of the original credit agreement,Amendments,Date,,,,
-,,Amendment,1/13/2017,,,,
-1.5,A&O contacts,"Martin.Bentley@AllenOver.com, Andreas.VanGreunen@AllenOver.com",,,,,
-,,,,,,,
-Facilities,,,,,,,
-,,,,,,,Clause Ref 
-2.1,Total Commitments,FacilityType,Ranking,Currency,Amount,MaturityDate,
-,,Aquisition,Free text,HUF,100000,1/31/2017,
-,,Revolving,Mezzanine,EUR,900000,1/31/2222,
-2.2,Purpose clause,Party fun,,,,,
-2.3,What level of consent is required to approve an extension of maturity?,Autonomous,,,,,
-2.4,Extension options,Evergreen,,,,,
-2.5,Does the credit agreement contain interest rate floors (eg. LIBOR may not be below zero)?,No,,,,,1.2
-2.6,Is a disposal a mandatory prepayment event?,Yes,,,,,
-,What is the size of any general permitted basket?,Currency,Amount,,,,
-,,GBP,1000,,,,
-2.7,Is a change of control a mandatory prepayment event?,Yes,,,,,
-2.8,Does the credit agreement contain a tax gross-up?,Yes,,,,,2.8.8
-2.9,Does the credit agreement contain a negative pledge?,Yes,,,,,
-,What is the size of any general permitted basket?,Currency,Amount,,,,3.2
-,,GBP,2000,,,,
-2.1,Does the credit agreement contain a restriction on incurring financial indebtedness?,Yes,,,,,
-,What is the size of any general permitted basket?,Currency,Amount,,,,
-,,CAD,3000,,,,
-2.11,Does the credit agreement contain the following financial covenants,,,,,,
-,debt:EBITDA (leverage)?,Yes,,,,,
-,EBITDA:interest (interest cover)?,Yes,,,,,
-,Cashflow:debt service costs (cashflow cover)?,Yes,,,,,
-,Tangible net worth?,Yes,,,,,
-2.12,Does the credit agreement contain any other financial covenants?,Yes,,,,,
-2.13,Does the credit agreement contain a guarantor coverage covenant?,Yes,,,,,
-2.14,Does the credit agreement contain obligations for the borrower to provide the following to the agent/lenders:,,,,,,
-,All documents dispatched by the borrower to its shareholders or its creditors generally?,Yes,,,,,
-,"Details of any litigation, arbitration or administrative proceedings?",Yes,,,,,
-,Notification of any default?,Yes,,,,,
-,"Further information on request regarding the financial condition, business or operations of any member of the group?",Yes,,,,,
-,Notification of any change in ownership/shareholding of the group?,Yes,,,,,
-,Notification of any changes in the constitutive documents of any obligor?,Yes,,,,,
-,Consolidated annual financial statements?,Yes,,,,,
-,Further option:,Number,PeriodEnd,,,,
-,,12,Month(s) after period end,,,,
-,Consolidated semi-annual financial statements?,Yes,,,,,
-,Further option:,Number,PeriodEnd,,,,
-,,6,Month(s) after period end,,,,
-,Consolidated quarterly financial statements?,Yes,,,,,
-,Further option:,Number,PeriodEnd,,,,
-,,3,Week(s) after period end,,,,
-,Consolidated monthly financial statements?,Yes,,,,,
-,Further option:,Number,PeriodEnd,,,,
-,,1,Week(s) after period end,,,,
-,Unconsolidated annual financial statements?,Yes,,,,,2.98
-,Further option:,Number,PeriodEnd,,,,1.589
-,,2,Business Day(s) after period end,,,,
-,Unconsolidated semi-annual financial statements?,No,,,,,
-,Unconsolidated quarterly financial statements?,No,,,,,
-,Unconsolidated monthly financial statements?,No,,,,,
-2.15,Is failure to pay an event a default?,Yes,,,,,
-2.16,Is there a material adverse changed event of a default?,Yes,,,,,
-2.17,What cross-default or cross acceleration is provided for?,None,,,,,
-2.18,What is the cross-default or cross-acceleration threshold?,Currency,Amount,,,,
-,,GBP,5000,,,,
-2.19,Does the credit aggreement contain a set-off clause in favour of the lender?,Yes,,,,,
-2.2,Governing law of principal credit aggreement:,qweqwe asdasd,,,,,
-2.21,Does the credit aggreement provide for arbitration?,Yes,,,,,
-,,,,,,,
-Voting,,,,,,,
-,,,Clause Ref ,,,,
-3.1,Voting level for most decisions?,66.67%,,,,,
-3.2,Can a lender split its commitments/loans when voting?,Yes,,,,,
-3.3,Details of split voting (if applicable):,qwepoi qwepoi qwepoi!!,,,,,
-3.4,Can the hedge counterparties vote before enforcement?,Yes,,,,,
-3.5,Can the hedge counterparties vote after enforcement?,Yes,,,,,
-,,,,,,,
-Obligors,,,,,,,
-,,,Clause Ref ,,,,
-4.1,"List the Obligors by name, juristiction and whether they are a borrower, guarantor, and/or security provider on a new line for each below: E.g. Name, Jurisdiction, Borrower","asdasd, qweqwe, zxczxc",,,,,
-4.2,Do all guarantors guarantee all borrowings?,Yes,,,,,
-4.3,Does the agreement allow additional borrowers?,Yes,,,,,
-4.4,Consent level for additional borrowers in existing juridictions:,Non-standard consent level (i.e. Not all lender or majority lender (66 2/3%)),,,,,
-4.5,Consent level for additional borrowers in new juridictions:,Majority lender (66 2/3%),,,,,
-4.6,Does the aggreement allow additional guarantors:,All lender,,,,,
-4.7,Consent level for additional guarantors in existing juridictions:,All lender,,,,,
-4.8,Consent level for additional guarantors in new juridictions:,Majority lender (66 2/3%),,,,,
-,,,,,,,
-Security and structure,,,,,,,
-5.1,Is there security?,Yes,,,,,
-5.2,Brief description of security:,werpoi werpoi werpoi werpoi!!,,,,,
-5.3,What laws govern the security agreements?,asdl;k as;dlk asd;lk asd,,,,,
-5.4,Is there an intercreditor/subordination/priority agreement?,Yes,,,,,
-5.5,Do the hedge counterparties benefit from the security?,Yes,,,,,
-5.6,Have the original security documents been provided to the security trustee facility agent?,Yes,,,,,
-,,,,,,,
-Transferability and disclosure,,,,,,,
-,,,,Clause Ref ,,,
-6.1,"When an event of default is outstanding, are the following permitted?",,,,,,
-,Transfer to existing lenders:,With consultation,,,,,
-,Disclosure to existing lenders:,With consultation,,,,,
-,Transfer to banks and financial institutions:,With consultation,,,,,
-,Disclosure to banks and financial institutions:,With consultation,,,,,
-,"Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?",With consultation,,,,,
-,"Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?",With consultation,,,,,
-,"Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?",Yes,,,,,
-6.2,"When no event of default is outstanding, are the following permitted?",,,,,,
-,Transfer to existing lenders:,With consultation,,,,,
-,Disclosure to existing lenders:,With consultation,,,,,
-,Transfer to banks and financial institutions:,With consultation,,,,,
-,Disclosure to banks and financial institutions:,With consultation,,,,,
-,"Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?",With consultation,,,,,
-,"Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?",With consultation,,,,,
-,"Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?",Yes,,,,,
-6.3,Would a potential transferee be required to enter into a non-disclosure agreement?,Yes,,,,,
-6.4,"If consent is required for any transfer, is it deemed given if not refused?",Yes,,,,,
-6.5,"Is the consent of any issuing bank, agent or trustee required for a transfer?",No,,,,,
-6.6,"In exceptional circumstances only, please provide any other relevant information for transfer (e.g. exceptional restrictions, transfer requirements)",werwerwerwerwer,,,,,
-6.7,Minimum transfer amount,Currency,Amount,,,,
-,,CAD,5000,,,,
-6.8,Can lenders grant security over their rights?,Yes,,,,,
-,,,,,,,
-Loan management,,,,,,,
-,,,,Clause Ref ,,,
-7.1,Permitted interest periods,1 month,,,,,
-7.2,What consent requirements are there for non-standard interest periods (if any),,,,,,
-,,None!,,,,,
-7.3,Notice period for submitting a utilisation request for sterling,Number,Days,,,,
-,,3,Day(s),,,,
-7.4,Notice period for submitting a utilisation request for non-sterling,Number,Days,,,,
-,,12,Business day(s),,,,
-7.5,Notice period for prepayment of loans,Number,Days,,,,
-,,10,Business day(s),,,,
-7.6,Notice period for cancellation of commitments,Number,Days,,,,
-,,5,Business day(s),,,,
-,,,,,,,
-Pricing,,,,,,,
-,,,Clause Ref ,,,,
-8.1,What is the initial margin (% per annum)?,12,,,,,
-8.2,Are there commitment fees?,No,,,,,
-8.3,Are there utilisation fees?,Yes,,,,,
-8.4,Does the margin vary (by references to a margin grid or otherwise)?,Yes,,,,,
-,,,,,,,
-Defaulting Lenders,,,,,,,
-9.1,Does the credit agreement contain a concept of Defaulting Lenders?,Yes,,,,,
-9.2,Can Obligors set off against money owed to Defaulting Lenders?,Yes,,,,,
-,,,,,,,
-Agents,,,,,,,
-10.1,"Agent type (E.g. Facility agent, security agent) and agent name?",Security Agent qweqwe,,,,,
-,,,,,,,
-Other information,,,,,,,
-11.1,Please give a brief summary of any other significant information not covered by the questions above:,qweopiu qweoiu qwe!!,,,,,
-11.2,Test question. This must be numeric?,123,,,,,
-,,,,,,,
+Number,Question,Answer,ClauseRef,Section
+1.1,Initial lenders in the syndicate:,"<b>Lender</b> - Barclays, Bank of Tokyo Mitsubishi
+
+<b>DistributionList</b> - Contact1@BankOfTokyoMitsubishi.com, Contact1@Barclays.com, Contact2@Barclays.com
+",,Overview
+1.2,Principal Sponsor (if any),My Test Principal Borrower,,Overview
+1.3,Date of original credit agreement,13/01/2017,,Overview
+1.4,Date of all amendments/amendments and restatements on or after the date of the original credit agreement,"Amendments - Amendment, Date - 13/01/2017 ",,Overview
+1.5,A&O contacts,"Martin.Bentley@AllenOver.com, Andreas.VanGreunen@AllenOver.com",,Overview
+2.1,Total Commitments,"FacilityType - Aquisition, Ranking - Free text, Currency - HUF, Amount - 100000, MaturityDate - 31/01/2017 ",,Facilities
+,Total Commitments Row (2),"FacilityType - Revolving, Ranking - Mezzanine, Currency - EUR, Amount - 900000, MaturityDate - 31/01/2222 ",,Facilities
+2.2,Purpose clause,Party fun,,Facilities
+2.3,What level of consent is required to approve an extension of maturity?,Autonomous,,Facilities
+2.4,Extension options,Evergreen,,Facilities
+2.5,Does the credit agreement contain interest rate floors (eg. LIBOR may not be below zero)?,No,1.2,Facilities
+2.6,Is a disposal a mandatory prepayment event?,Yes,,Facilities
+,What is the size of any general permitted basket?,"Currency - GBP, Amount - 1000 ",,Facilities
+2.7,Is a change of control a mandatory prepayment event?,Yes,,Facilities
+2.8,Does the credit agreement contain a tax gross-up?,Yes,2.8.8,Facilities
+2.9,Does the credit agreement contain a negative pledge?,Yes,,Facilities
+,What is the size of any general permitted basket?,"Currency - GBP, Amount - 2000 ",3.2,Facilities
+2.10,Does the credit agreement contain a restriction on incurring financial indebtedness?,Yes,,Facilities
+,What is the size of any general permitted basket?,"Currency - CAD, Amount - 3000 ",,Facilities
+2.11,Does the credit agreement contain the following financial covenants,,,Facilities
+,debt:EBITDA (leverage)?,Yes,,Facilities
+,EBITDA:interest (interest cover)?,Yes,,Facilities
+,Cashflow:debt service costs (cashflow cover)?,Yes,,Facilities
+,Tangible net worth?,Yes,,Facilities
+2.12,Does the credit agreement contain any other financial covenants?,Yes,,Facilities
+2.13,Does the credit agreement contain a guarantor coverage covenant?,Yes,,Facilities
+2.14,Does the credit agreement contain obligations for the borrower to provide the following to the agent/lenders:,,,Facilities
+,All documents dispatched by the borrower to its shareholders or its creditors generally?,Yes,,Facilities
+,"Details of any litigation, arbitration or administrative proceedings?",Yes,,Facilities
+,Notification of any default?,Yes,,Facilities
+,"Further information on request regarding the financial condition, business or operations of any member of the group?",Yes,,Facilities
+,Notification of any change in ownership/shareholding of the group?,Yes,,Facilities
+,Notification of any changes in the constitutive documents of any obligor?,Yes,,Facilities
+,Consolidated annual financial statements?,Yes,,Facilities
+,Further option:,"Number - 12, PeriodEnd - Month(s) after period end ",,Facilities
+,Consolidated semi-annual financial statements?,Yes,,Facilities
+,Further option:,"Number - 6, PeriodEnd - Month(s) after period end ",,Facilities
+,Consolidated quarterly financial statements?,Yes,,Facilities
+,Further option:,"Number - 3, PeriodEnd - Week(s) after period end ",,Facilities
+,Consolidated monthly financial statements?,Yes,,Facilities
+,Further option:,"Number - 1, PeriodEnd - Week(s) after period end ",,Facilities
+,Unconsolidated annual financial statements?,Yes,2.98,Facilities
+,Further option:,"Number - 2, PeriodEnd - Business Day(s) after period end ",1.589,Facilities
+,Unconsolidated semi-annual financial statements?,No,,Facilities
+,Unconsolidated quarterly financial statements?,No,,Facilities
+,Unconsolidated monthly financial statements?,No,,Facilities
+2.15,Is failure to pay an event a default?,Yes,,Facilities
+2.16,Is there a material adverse changed event of a default?,Yes,,Facilities
+2.17,What cross-default or cross acceleration is provided for?,None,,Facilities
+2.18,What is the cross-default or cross-acceleration threshold?,"Currency - GBP, Amount - 5000 ",,Facilities
+2.19,Does the credit aggreement contain a set-off clause in favour of the lender?,Yes,,Facilities
+2.20,Governing law of principal credit aggreement:,qweqwe asdasd,,Facilities
+2.21,Does the credit aggreement provide for arbitration?,Yes,,Facilities
+3.1,Voting level for most decisions?,66 2/3%,,Voting
+3.2,Can a lender split its commitments/loans when voting?,Yes,,Voting
+3.3,Details of split voting (if applicable):,qwepoi qwepoi qwepoi!!,,Voting
+3.4,Can the hedge counterparties vote before enforcement?,Yes,,Voting
+3.5,Can the hedge counterparties vote after enforcement?,Yes,,Voting
+4.1,"List the Obligors by name, juristiction and whether they are a borrower, guarantor, and/or security provider on a new line for each below: E.g. Name, Jurisdiction, Borrower","asdasd, qweqwe, zxczxc",,Obligors
+4.2,Do all guarantors guarantee all borrowings?,Yes,,Obligors
+4.3,Does the agreement allow additional borrowers?,Yes,,Obligors
+4.4,Consent level for additional borrowers in existing juridictions:,Non-standard consent level (i.e. Not all lender or majority lender (66 2/3%)),,Obligors
+4.5,Consent level for additional borrowers in new juridictions:,Majority lender (66 2/3%),,Obligors
+4.6,Does the aggreement allow additional guarantors:,All lender,,Obligors
+4.7,Consent level for additional guarantors in existing juridictions:,All lender,,Obligors
+4.8,Consent level for additional guarantors in new juridictions:,Majority lender (66 2/3%),,Obligors
+5.1,Is there security?,Yes,,Security and structure
+5.2,Brief description of security:,werpoi werpoi werpoi werpoi!!,,Security and structure
+5.3,What laws govern the security agreements?,asdl;k as;dlk asd;lk asd,,Security and structure
+5.4,Is there an intercreditor/subordination/priority agreement?,Yes,,Security and structure
+5.5,Do the hedge counterparties benefit from the security?,Yes,,Security and structure
+5.6,Have the original security documents been provided to the security trustee facility agent?,Yes,,Security and structure
+6.1,"When an event of default is outstanding, are the following permitted?",,,Transferability and disclosure
+,Transfer to existing lenders:,With consultation,,Transferability and disclosure
+,Disclosure to existing lenders:,With consultation,,Transferability and disclosure
+,Transfer to banks and financial institutions:,With consultation,,Transferability and disclosure
+,Disclosure to banks and financial institutions:,With consultation,,Transferability and disclosure
+,"Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?",With consultation,,Transferability and disclosure
+,"Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?",With consultation,,Transferability and disclosure
+,"Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?",Yes,,Transferability and disclosure
+6.2,"When no event of default is outstanding, are the following permitted?",,,Transferability and disclosure
+,Transfer to existing lenders:,With consultation,,Transferability and disclosure
+,Disclosure to existing lenders:,With consultation,,Transferability and disclosure
+,Transfer to banks and financial institutions:,With consultation,,Transferability and disclosure
+,Disclosure to banks and financial institutions:,With consultation,,Transferability and disclosure
+,"Transfer to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potential counterparty)?",With consultation,,Transferability and disclosure
+,"Disclosure to any other person, trust, fund or entity regularly engaged or established for the purpose of making loans (ie any potensial counterparty)?",With consultation,,Transferability and disclosure
+,"Is there a requirement for any potential transferee to be regulated, hold a banking licence etc?",Yes,,Transferability and disclosure
+6.3,Would a potential transferee be required to enter into a non-disclosure agreement?,Yes,,Transferability and disclosure
+6.4,"If consent is required for any transfer, is it deemed given if not refused?",Yes,,Transferability and disclosure
+6.5,"Is the consent of any issuing bank, agent or trustee required for a transfer?",No,,Transferability and disclosure
+6.6,"In exceptional circumstances only, please provide any other relevant information for transfer (e.g. exceptional restrictions, transfer requirements)",werwerwerwerwer,,Transferability and disclosure
+6.7,Minimum transfer amount,"Currency - CAD, Amount - 5000 ",,Transferability and disclosure
+6.8,Can lenders grant security over their rights?,Yes,,Transferability and disclosure
+7.1,Permitted interest periods,1 month,,Loan management
+7.2,What consent requirements are there for non-standard interest periods (if any),,,Loan management
+,,None!,,Loan management
+7.3,Notice period for submitting a utilisation request for sterling,"Number - 3, Days - Day(s) ",,Loan management
+7.4,Notice period for submitting a utilisation request for non-sterling,"Number - 12, Days - Business day(s) ",,Loan management
+7.5,Notice period for prepayment of loans,"Number - 10, Days - Business day(s) ",,Loan management
+7.6,Notice period for cancellation of commitments,"Number - 5, Days - Business day(s) ",,Loan management
+8.1,What is the initial margin (% per annum)?,12,,Pricing
+8.2,Are there commitment fees?,No,,Pricing
+8.3,Are there utilisation fees?,Yes,,Pricing
+8.4,Does the margin vary (by references to a margin grid or otherwise)?,Yes,,Pricing
+9.1,Does the credit agreement contain a concept of Defaulting Lenders?,Yes,,Defaulting Lenders
+9.2,Can Obligors set off against money owed to Defaulting Lenders?,Yes,,Defaulting Lenders
+10.1,"Agent type (E.g. Facility agent, security agent) and agent name?",Security Agent qweqwe,,Agents
+11.1,Please give a brief summary of any other significant information not covered by the questions above:,qweopiu qweoiu qwe!!,,Other information
+11.2,Test question. This must be numeric?,123,,Other information
