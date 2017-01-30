@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AO.LPR.Reports;
+using ClassLibrary1;
 using Newtonsoft.Json;
 
 namespace ConsoleApplication1
@@ -13,13 +14,8 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            //var watch = System.Diagnostics.Stopwatch.StartNew();
-            new ClassLibrary1.Class1().CreatePdfNewNew();
-            //watch.Stop();
-            //var elapsedMs = watch.ElapsedMilliseconds;
-
-            //Console.WriteLine(elapsedMs.ToString());
-            //Console.ReadKey();
+            //new ClassLibrary1.PDfBase().CreatePdfNewNew();
+            new PDfBase().GenerateSearchCsvReport(); 
         }
     }
 }

@@ -1,17 +1,16 @@
-﻿using iTextSharp.text;
+﻿using System;
+using System.CodeDom;
+using System.Collections;
+using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading.Tasks;
 using AO.LPR.Reports;
 
 using CsvHelper;
 using CsvHelper.Configuration;
-using iTextSharp.text.html.simpleparser;
 using iTextSharp.tool.xml;
 
 
@@ -42,7 +41,7 @@ public class CsvRowItem
     public int DisplayOrder { get; set; }
 
 }
-public class Class1
+public class PDfBase
     {
 
         string excelTemplateLocationBasePath =
@@ -69,22 +68,6 @@ public class Class1
                 }
             }
         }
-        //private void GenerateExcelReport()
-        //{
-        //    string htmlPath = generatedFolderBasePath + "latest_report_new.html";
-        //    string csvPath = generatedFolderBasePath + "latest_report.csv";
-        //    string excelPath = generatedFolderBasePath + "latest_report_new.xlsx";
-
-        //    if (File.Exists(csvPath))
-        //        File.Delete(csvPath);
-
-        //    Application excel = new Application();
-
-        //    Workbook xls1 = excel.Workbooks.Open(htmlPath);
-        //    xls1.SaveAs(csvPath, XlFileFormat.xlCSVWindows);
-        //    xls1.Close();
-        //}
-
         private List<CsvRowItem> GenerateCsvObject(ReportForm obj)
         {
             var allCsvRows = new List<CsvRowItem>();
@@ -141,7 +124,6 @@ public class Class1
             }
             return allCsvRows;
         }
-
         private string GetFormattedAnswerText(GridRow header, GridRow row)
         {
             StringBuilder answerText = new StringBuilder();
@@ -170,14 +152,7 @@ public class Class1
 
                 var allcsvRows = GenerateCsvObject(reportContent);
 
-                //var headerRecord = new CsvRowItem()
-                //{
-                //    AnswerText = "ANSWERS",
-                //    ClauseRefValue = "CLAUSEREF",
-                //    Section = "SECTIONS",
-                //    DisplayText = "QUESTIONS",
-                //    DisplayNumber = "NUMBER"
-                //};
+              
 
                 csv.WriteHeader<CsvRowItem>();
 
@@ -187,7 +162,6 @@ public class Class1
                 }
             }
         }
-
         public void CreatePdfNewNew()
         {
             var cssText = System.IO.File.ReadAllText(@"C:\git\pdf-csv-generator\AO.LPR.Reports\report\pdf\css\pdf.css");
@@ -220,5 +194,141 @@ public class Class1
 
             document.Close();
         }
+
+        private List<SearchEx> GetFakeSearchResultsNoPivot()
+        {
+            var allForms = new List<SearchEx>();
+
+            var headerEx = new SearchEx() {FormName = "Form"};
+            headerEx.AllAnswers = new List<string>();
+            headerEx.AllAnswers.Add(Questions.Name);
+            headerEx.AllAnswers.Add(Questions.Age);
+            headerEx.AllAnswers.Add(Questions.Job); headerEx.AllAnswers.Add(Questions.Nationality);
+            allForms.Add(headerEx);
+
+            for (int i = 0; i < 10; i++)
+            {
+                var searchEx = new SearchEx() {FormName = "Form - " + i + 1};
+                searchEx.AllAnswers = new List<string>();
+
+                var guid = Guid.NewGuid();
+                searchEx.AllAnswers.Add(guid + " - "+(i * 10 ^ i).ToString());
+                searchEx.AllAnswers.Add(guid + " - " + (i * 10 ^ i).ToString());
+                searchEx.AllAnswers.Add(guid + " - " + (i * 10 ^ i).ToString()); searchEx.AllAnswers.Add(guid + " - " + (i * 10 ^ i).ToString());
+
+                allForms.Add(searchEx);
+            }
+
+            return allForms;
+
+        }
+
+        public List<SearchEx> GetFakeSearchResultsPivot()
+        {
+            var returnValue = new List<SearchEx>();
+            var allForms = GetFakeSearchReportForms();
+
+            //create headers first
+
+
+            return returnValue;
+        }
+        public  void GenerateSearchCsvReport ()
+        {
+            string csvPath = generatedFolderBasePath + "latest_search_report.csv";
+            if (File.Exists(csvPath))
+                File.Delete(csvPath);
+
+            using (var csv = new CsvWriter(new StreamWriter(csvPath)))
+            {
+                csv.Configuration.HasHeaderRecord = true;
+                csv.Configuration.Delimiter = ",";
+                //csv.Configuration.RegisterClassMap<CsvRowItemMap>();
+
+                var allcsvRows = GetFakeSearchResultsNoPivot();
+
+                //allcsvRows[0].AllAnswers.ForEach(item => csv.WriteField(item));
+
+                //csv.NextRecord();
+                foreach (var item in allcsvRows)
+                {
+                    csv.WriteField(item.FormName);
+                    foreach (var ans in item.AllAnswers)
+                    {
+                        csv.WriteField(ans);
+                    }
+                    csv.NextRecord();
+                }
+            }
+        }
+
+        public List<QuestionAnswer> GetRandomQuestions(int i)
+        {
+            var randomList = new List<QuestionAnswer>();
+            if (i % 2 == 0)
+            {
+                randomList.Add(new QuestionAnswer() { DisplayOrder = 1, QId = 1, QText = Questions.Name, AText = "Neelanshu - " + (i * 10 ^ i) });
+                randomList.Add(new QuestionAnswer() { DisplayOrder = 2, QId = 2, QText = Questions.Address, AText = "London - " + (i * 10 ^ i) });
+                randomList.Add(new QuestionAnswer() { DisplayOrder = 3, QId = 3, QText = Questions.Job, AText = "Permanent - " + (i * 10 ^ i) });
+
+                return randomList;
+            }
+
+            randomList.Add(new QuestionAnswer() { DisplayOrder = 1, QId = 4, QText = Questions.Age, AText = " " + (i * 10 ^ i) });
+            randomList.Add(new QuestionAnswer() { DisplayOrder = 2, QId = 5, QText = Questions.Nationality, AText = "BI- " + (i * 10 ^ i) });
+            randomList.Add(new QuestionAnswer() { DisplayOrder = 3,QId = 6, QText = Questions.Gender, AText = "Male - " + (i * 10 ^ i) });
+
+            return randomList;
+        }
+
+        public List<SearchReportForm> GetFakeSearchReportForms()
+        {
+            var returnValue = new List<SearchReportForm>();
+            for (int i = 1; i <= 6; i++)
+            {
+                var form = new SearchReportForm()
+                {
+                    Id = i,
+                    FormName = "Form - " + i,
+                    Questions = GetRandomQuestions(i)
+                };
+
+                returnValue.Add(form);
+            }
+            return new List<SearchReportForm>();
+        }
+
+    }
+
+
+    public class SearchEx
+    {
+        public string FormName { get; set; }
+        public List<string> AllAnswers { get; set; }
+    }
+    public class Questions
+    {
+        public const string Name = "What is your name";
+        public const string Address= "Where do you live";
+        public const string Job = "What is your Job";
+        public const string Age= "What is your Age";
+        public const string Nationality = "What is your nationality";
+        public const string Gender = "What is your gender";
+    }
+
+    public class QuestionAnswer
+    {
+        public int DisplayOrder { get; set; }
+        public int QId { get; set; }
+        public string QText { get; set; }
+        public string AText { get; set; }
+    }
+
+    public class SearchReportForm
+    {
+        public int Id { get; set; }
+        public string FormName { get; set; }
+
+        public List<QuestionAnswer> Questions { get; set; }
     }
 }

@@ -230,7 +230,6 @@ public class LprForm
 
 
 
-
 public class ReportForm
 {
     public int  Id { get; set; }
